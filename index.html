@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Икося ❤️</title>
+    <meta
+      name="description"
+      content="A cinematic romantic website dedicated to Inkar, also known as Ikosya."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor cursor-dot"></div>
+    <div class="cursor cursor-ring"></div>
+
+    <div class="background">
+      <div class="aurora aurora-one"></div>
+      <div class="aurora aurora-two"></div>
+      <div class="aurora aurora-three"></div>
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="stars" aria-hidden="true"></div>
+    </div>
+
+    <div class="top-bar glass">
+      <div class="brand">Икося ❤️</div>
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">
+        <span class="music-icon">♫</span>
+        <span class="music-label">Play our song</span>
+      </button>
+    </div>
+
+    <!-- Replace the src below with your local music file if needed. -->
+    <audio id="bg-music" loop preload="auto">
+      <source src="./assets/tvoi-glaza.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="snap-container">
+      <section class="screen hero active" id="hero" data-screen>
+        <div class="screen-inner hero-layout">
+          <div class="hero-badge glass reveal">For Inkar, my Ikosya</div>
+          <h1 class="hero-title reveal">
+            <span>Икося</span>
+            <span class="heart">❤️</span>
+          </h1>
+          <p class="hero-subtitle reveal">Біз бірге 3 жыл ❤️</p>
+          <p class="hero-copy reveal">
+            Сен келгеннен кейін өмірім жұмсақ жарыққа, терең мағынаға және шынайы
+            бақытқа толды.
+          </p>
+          <button class="secret-button reveal" type="button" data-scroll-target="#story">
+            Our story begins
+          </button>
+          <div class="scroll-indicator reveal" data-scroll-target="#story" role="button" tabindex="0">
+            <span>Scroll</span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen story" id="story" data-screen>
+        <div class="screen-inner story-layout">
+          <div class="section-header reveal">
+            <span class="eyebrow">Our Story</span>
+            <h2>Махаббатымыздың нәзік әуені</h2>
+          </div>
+          <div class="story-panel glass reveal">
+            <div class="story-line">
+              <span class="story-dot"></span>
+              <p>Біздің тарихымыз ерекше... сен менің өмірімді өзгерттің.</p>
+            </div>
+            <div class="story-line">
+              <span class="story-dot"></span>
+              <p>Сенің жымиысың менің әр күнімді жарық қылады.</p>
+            </div>
+            <div class="story-line">
+              <span class="story-dot"></span>
+              <p>Үш жыл өтті, бірақ жүрегім сені әлі де алғаш көргендей жақсы көреді.</p>
+            </div>
+            <div class="story-line">
+              <span class="story-dot"></span>
+              <p>Сен жанымдағы ең жылы сезім, ең әдемі тыныштық, ең қымбат адамсың.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen reasons" id="reasons" data-screen>
+        <div class="screen-inner">
+          <div class="section-header reveal">
+            <span class="eyebrow">Why I Love You</span>
+            <h2>Сені жақсы көруімнің себептері</h2>
+          </div>
+          <div class="card-grid">
+            <article class="love-card glass reveal floating-card">
+              <div class="card-glow"></div>
+              <h3>Сен мені түсінесің</h3>
+              <p>
+                Сенің жаның менің үнсіздігімді де сезеді. Сол үшін жаным сенің
+                қасыңда әрдайым тыныштық табады.
+              </p>
+            </article>
+            <article class="love-card glass reveal floating-card">
+              <div class="card-glow"></div>
+              <h3>Сен мені бақытты етесің</h3>
+              <p>
+                Кішкентай сәттердің өзін сен ерекше ете аласың. Қасыңда болу өмірдің
+                ең тәтті сыйы сияқты.
+              </p>
+            </article>
+            <article class="love-card glass reveal floating-card">
+              <div class="card-glow"></div>
+              <h3>Сен ерекше жансың</h3>
+              <p>
+                Сендегі мейірім, сұлулық, нәзіктік және жүрек жылуы ешкімге
+                ұқсамайды. Сен менің Икосямсың.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen memories" id="memories" data-screen>
+        <div class="screen-inner">
+          <div class="section-header reveal">
+            <span class="eyebrow">Memories</span>
+            <h2>Біздің ең әдемі сәттеріміз</h2>
+          </div>
+          <div class="gallery">
+            <!-- Replace these placeholders with your real photos by setting background-image in styles.css or adding img tags. -->
+            <figure class="memory-card glass reveal tilt-card">
+              <div class="memory-visual memory-one"></div>
+              <figcaption>Бірге күлген сәттер</figcaption>
+            </figure>
+            <figure class="memory-card glass reveal tilt-card">
+              <div class="memory-visual memory-two"></div>
+              <figcaption>Жылы естеліктер</figcaption>
+            </figure>
+            <figure class="memory-card glass reveal tilt-card">
+              <div class="memory-visual memory-three"></div>
+              <figcaption>Сен бар әлем</figcaption>
+            </figure>
+            <figure class="memory-card glass reveal tilt-card">
+              <div class="memory-visual memory-four"></div>
+              <figcaption>Үш жылдық махаббат</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen message" id="message" data-screen>
+        <div class="screen-inner message-layout">
+          <div class="section-header reveal">
+            <span class="eyebrow">Message To Her</span>
+            <h2>Жүрегімнен шыққан сөздер</h2>
+          </div>
+          <div class="message-panel glass reveal">
+            <p class="typewriter" id="typewriter" data-text="Мен сені қатты жақсы көремін, Икося. Сен менің ең қымбат адамымсың. Сенің жаның, күлкің, мейірімің менің өмірімді ерекше етті. Біз бірге болған әр сәт жүрегімде мәңгі сақталады."></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen finale" id="finale" data-screen>
+        <div class="screen-inner finale-layout">
+          <div class="finale-orbit orbit-one"></div>
+          <div class="finale-orbit orbit-two"></div>
+          <div class="section-header reveal">
+            <span class="eyebrow">Forever</span>
+            <h2 class="finale-title">Мен сені сүйемін ❤️</h2>
+          </div>
+          <p class="finale-copy reveal">
+            Икося, сен менің жүрегімнің ең әдемі әуенісің. Бұл махаббат мен үшін
+            мәңгілік.
+          </p>
+          <button class="secret-button reveal" id="secret-message-button" type="button">
+            Secret message
+          </button>
+          <div class="secret-message glass" id="secret-message" aria-hidden="true">
+            Сен менің бақытымсың, бүгін де, ертең де, әрқашан.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
