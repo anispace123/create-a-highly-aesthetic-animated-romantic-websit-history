@@ -407,6 +407,7 @@ a,
   border-radius: 1.35rem;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   margin-bottom: 0.9rem;
   transform: scale(1);
   transition: transform 500ms ease, filter 500ms ease;
@@ -419,30 +420,29 @@ a,
 
 .memory-one {
   background:
-    linear-gradient(135deg, rgba(255, 134, 193, 0.22), rgba(143, 102, 255, 0.16)),
-    radial-gradient(circle at 20% 20%, #ffd1e4, transparent 30%),
-    linear-gradient(135deg, #58234f, #24122f);
+    linear-gradient(135deg, rgba(255, 134, 193, 0.18), rgba(143, 102, 255, 0.18)),
+    url("./assets/memory-1.jpg");
 }
 
 .memory-two {
   background:
-    linear-gradient(135deg, rgba(255, 210, 232, 0.18), rgba(175, 137, 255, 0.14)),
-    radial-gradient(circle at 80% 20%, #ff9dc9, transparent 28%),
-    linear-gradient(135deg, #2c1838, #120814);
+    linear-gradient(135deg, rgba(255, 210, 232, 0.14), rgba(175, 137, 255, 0.18)),
+    url("./assets/memory-2.jpg");
+  background-position: center, center 18%;
 }
 
 .memory-three {
   background:
     linear-gradient(135deg, rgba(255, 151, 199, 0.16), rgba(111, 92, 255, 0.2)),
-    radial-gradient(circle at 50% 50%, #ffe3f1, transparent 26%),
-    linear-gradient(135deg, #4f1842, #160711);
+    url("./assets/memory-3.jpg");
+  background-position: center, center 34%;
 }
 
 .memory-four {
   background:
     linear-gradient(135deg, rgba(255, 194, 221, 0.14), rgba(161, 117, 255, 0.2)),
-    radial-gradient(circle at 30% 70%, #ffacd2, transparent 24%),
-    linear-gradient(135deg, #37124a, #120611);
+    url("./assets/memory-4.jpg");
+  background-position: center, center 28%;
 }
 
 .memory-card figcaption {
