@@ -727,6 +727,14 @@ a,
     gap: 0.8rem;
   }
 
+  .memory-visual {
+    aspect-ratio: auto;
+    min-height: 20rem;
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(17, 7, 25, 0.86);
+  }
+
   .cursor {
     display: none;
   }
